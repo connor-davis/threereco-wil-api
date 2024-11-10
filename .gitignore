@@ -1,0 +1,7 @@
+bin/
+obj/
+Migrations/
+Properties/
+
+appsettings.json
+three-api.csproj.user
