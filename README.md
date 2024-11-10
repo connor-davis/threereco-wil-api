@@ -8,7 +8,7 @@ Welcome to the 3rEco ASP .NET Core Web API! This project has been built with JWT
 ### 🛠️ Technologies Used:
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=dotnet,visualstudio,git,github,csharp,ubuntu,postgresql" height="40" alt="technologies"  />
+  <img src="https://skillicons.dev/icons?i=dotnet,visualstudio,git,github,cs,ubuntu,postgresql" height="40" alt="technologies"  />
   <img width="12" />
 </div>
 
