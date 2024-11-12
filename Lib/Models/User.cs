@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace three_api.Lib.Models;
 
-public record User(Guid Id, string Email, Roles Roles)
+public record User(Guid Id, string Email, Roles[] Roles)
 {
     [JsonIgnore]
     public string Password { get; set; } = string.Empty;
