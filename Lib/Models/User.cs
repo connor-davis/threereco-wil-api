@@ -3,16 +3,10 @@ using System.Text.Json.Serialization;
 
 namespace three_api.Lib.Models;
 
-public record User(Guid Id, string Email)
+public record User(Guid Id, string Email, Roles Roles)
 {
     [JsonIgnore]
     public string Password { get; set; } = string.Empty;
-
-    [JsonIgnore]
-    public Roles[] Roles { get; set; } = [];
-
-    [NotMapped]
-    public string[] AvailableRoles => Roles.Select(role => role.ToString()).ToArray();
 
     [NotMapped]
     [JsonIgnore]
