@@ -28,10 +28,9 @@ namespace three_api.Controllers
                         Message = "The user already exists."
                     });
 
-                var user = new User(Guid.NewGuid(), userAuthentication.Email)
+                var user = new User(Guid.NewGuid(), userAuthentication.Email, [Roles.Guest])
                 {
                     Password = Password.HashPassword(userAuthentication.Password),
-                    Roles = [Roles.Guest]
                 };
 
                 context.Add(user);
