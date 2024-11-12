@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace three_api.Lib.Models;
@@ -23,14 +24,8 @@ public record Business(
     BusinessType BusinessType
 )
 {
-    [JsonIgnore]
-    public BusinessType BusinessType { get; set; }
-
     [NotMapped]
     public User? User { get; set; }
-
-    [NotMapped]
-    public string Type { get; set; } = BusinessType.ToString();
 
     [NotMapped]
     [JsonIgnore]
